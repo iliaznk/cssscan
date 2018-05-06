@@ -210,7 +210,7 @@ section.call-to-action {
 section.track-your-progress,
 section.mrs-productives,
 section.call-to-action {
-  margin: 20em auto 9em;
+  margin: 17em auto 9em;
 }
 
 .disclaimer {
@@ -281,4 +281,24 @@ a.button {
   text-transform: uppercase;
   margin-top: 2em;
   display: inline-block;
+}
+
+.benefits {
+  display: flex;
+}
+
+.benefit {
+  flex: 1;
+  margin: 0 .5em;
+  text-align: left;
+}
+
+.benefit-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.benefit-emojis {
+  font-size: 2em;
+  margin-bottom: .5em;
 }
