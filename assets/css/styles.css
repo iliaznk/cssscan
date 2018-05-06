@@ -218,3 +218,16 @@ section.mrs-productives {
 figure {
   margin: 0;
 }
+
+.quote {
+  margin-top: 5em;
+}
+
+.quote h3 {
+  margin-bottom: 0;
+}
+
+.quote p {
+  margin-top: .5em;
+  font-size: .9em;
+}
