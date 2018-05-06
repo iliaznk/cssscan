@@ -7,7 +7,6 @@ body {
   font-size: 18px;
   text-align: center;
   background: url('https://nosir.github.io/cleave.js/images/bg.gif');
-  cursor: url('../img/cursor.png'), auto;
 }
 
 ol {
@@ -193,6 +192,7 @@ ol.with-margin-between-lis > li {
 
 iframe {
   width: 40%;
+  border-radius: 3px !important;
 }
 
 section.free-time-explained {
@@ -200,14 +200,16 @@ section.free-time-explained {
 }
 
 section.track-your-progress > *:not(figure),
-section.mrs-productives {
+section.mrs-productives,
+section.call-to-action {
   max-width: 36%;
   margin-left: auto;
   margin-right: auto;
 }
 
 section.track-your-progress,
-section.mrs-productives {
+section.mrs-productives,
+section.call-to-action {
   margin: 20em auto 9em;
 }
 
@@ -264,4 +266,19 @@ figure {
 .quote p {
   margin-top: .5em;
   font-size: .9em;
+}
+
+a.button {
+  padding: 16px 48px 18px;
+  border-radius: 50em;
+  //color: #fff;
+  //background: #ff05d7;
+  color: #000;
+  background: #ffec00;
+  //border: 2px solid #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2em;
+  display: inline-block;
 }
