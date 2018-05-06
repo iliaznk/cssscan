@@ -27,12 +27,12 @@
       <span>🏃‍♀️</span>
     </div>
   </section>
-  <section class="free-time-explained">
+  <section class="free-time-explained reveal">
     <h2>You do have free time.</h2>
     <ol class="with-margin-between-lis">
       <li>
         <span class="bold">First:</span> Calculate how many free time you have, everyday. E.g.:
-        <div class="post-it pink">
+        <div class="post-it pink reveal">
           <ul>
             <li>24 hours</li>
             <li>- 8 hours sleep 😴</li>
@@ -46,11 +46,11 @@
       <li><span class="bold">Second:</span> Now ask yourself: what the fuck am I doing with this time?</li>
       <li><span class="bold">Third:</span> If you like Gary Vee, watch the video below.</li>
     </ol>
-    <figure class="center small-media">
-      <iframe src="https://www.youtube.com/embed/edMfu5IILSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class=""></iframe>
+    <figure class="center small-media reveal">
+      <iframe src="https://www.youtube.com/embed/edMfu5IILSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </figure>
   </section>
-  <section class="track-your-progress">
+  <section class="track-your-progress reveal">
     <h2>Track your daily progress real time</h2>
     <p>
       Given your free time, you can see how you’re using it.
@@ -65,15 +65,18 @@
       status bar and see how you already used your precious time in percentage.
       Forget that stopwatch and math at the end of the day. Real time, baby.
     </p>
+    <figure class="center big-media reveal">
+      <iframe src="https://www.youtube.com/embed/K4wEI5zhHB0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </figure>
   </section>
-  <section class="mrs-productives">
+  <section class="mrs-productives reveal">
     <h2>Inspired by a couple</h2>
     <p>
       A super productive couple that accomplished everything they always wanted
       and decided to live the life just the way they always dreamed of.
       Allow us to introduce to you: “Mr. & Mrs. Productive”. 💑
     </p>
-    <h3 class="highlight">
+    <h3 class="highlight reveal">
       Their biggest legacy:<br>
       Use mprove for the rest of their lives.
     </h3>
@@ -110,15 +113,20 @@
         <figure>
           <img src="assets/img/story_4.jpg">
           <figcaption>
-            The day Tim Ferriss went on a hangout to get tips with Mr. & Mrs. Productive
+            The day Tim Ferriss went on a hangout to get lessons from Mr. & Mrs. Productive
           </figcaption>
         </figure>
       </li>
     </ul>
-    <div class="quote">
+    <div class="quote reveal">
       <h3 class="pink">“Real productive people use mprove”</h3>
       <p>- Mrs. & Mr. Productive. They taught us everything.</p>
     </div>
   </section>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.reveal');
+  </script>
 </body>
 </html>

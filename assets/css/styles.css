@@ -141,10 +141,19 @@ ol.with-margin-between-lis > li {
   100% { opacity: 0; }
 }
 
-iframe {
+.small-media iframe {
   width: 50vh !important;
   height: 300px;
   margin: 0;
+}
+
+.big-media iframe {
+  width: 90vh !important;
+  height: 500px;
+  margin-top: 4em;
+}
+
+iframe {
   box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -179,10 +188,16 @@ section.free-time-explained {
   margin: 9em 0;
 }
 
+section.track-your-progress > *:not(figure),
+section.mrs-productives {
+  max-width: 36%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section.track-your-progress,
 section.mrs-productives {
   margin: 20em auto 9em;
-  max-width: 36%;
 }
 
 .disclaimer {
