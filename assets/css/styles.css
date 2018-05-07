@@ -274,7 +274,10 @@ footer.footer {
 
 .different {
   text-align: left;
-  width: calc(100% - 4em); }
+  width: calc(100% - 2em); }
+  @media only screen and (min-width: 768px) {
+    .different {
+      width: calc(100% - 4em); } }
 
 .highlight {
   margin: 2em;
@@ -308,23 +311,25 @@ a.button {
 a.button:hover {
   transform: scale(1.07); }
 
-.benefits {
+.points {
   display: flex;
   flex-direction: column; }
   @media only screen and (min-width: 768px) {
-    .benefits {
+    .points {
       flex-direction: row; } }
 
-.benefit {
+.point {
   flex: 1;
-  margin: 0 1.2em;
   text-align: left; }
+  @media only screen and (min-width: 768px) {
+    .point {
+      margin: 0 1.2em; } }
 
-.benefit-title {
+.point-title {
   font-weight: bold;
   margin: 0; }
 
-.benefit-emojis {
+.point-emojis {
   font-size: 2em;
   margin-bottom: .5em; }
 
