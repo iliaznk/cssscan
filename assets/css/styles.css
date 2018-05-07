@@ -273,14 +273,19 @@ a.button {
   border-radius: 50em;
   //color: #fff;
   //background: #ff05d7;
-  color: #000;
-  background: #ffec00;
+  color: #fff;
+  background: #FF1A05;
   //border: 2px solid #000;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 2em;
   display: inline-block;
+  transition: 150ms;
+}
+
+a.button:hover {
+  transform: scale(1.07);
 }
 
 .benefits {
