@@ -205,53 +205,22 @@ section.first-section {
 
 section.track-your-progress > *:not(figure),
 section.other-sections,
-section.first-section {
+section.first-section,
+footer.footer {
   max-width: 36%;
   margin-left: auto;
   margin-right: auto;
 }
 
 section.track-your-progress,
-section.other-sections {
+section.other-sections,
+footer.footer {
   margin: 17em auto 9em;
-}
-
-.disclaimer {
 }
 
 .highlight {
   margin: 2em;
   font-size: 30px;
-}
-
-.gallery {
-  margin-top: 3em;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-.gallery-photo {
-  color: #05bcde;
-  font-size: .9em;
-  margin: 2em 1em;
-  flex: 0 calc(50% - 2em);
-}
-
-.gallery-photo img {
-  border-radius: 3px;
-  width: 100%;
-  height: auto;
-  opacity: .9;
-  transition: 150ms;
-}
-
-.gallery-photo img:hover {
-  opacity: 1;
-}
-
-.gallery-photo figcaption {
-  margin: 1em auto;
 }
 
 figure {
@@ -309,4 +278,33 @@ a.button:hover {
 .benefit-emojis {
   font-size: 2em;
   margin-bottom: .5em;
+}
+
+.profile-img {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: .3em;
+}
+
+.footer {
+  font-size: .8em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #0065ff;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer img:not(.profile-img) {
+  border-radius: 3px;
+  opacity: .9;
+  transition: 150ms;
+}
+
+.footer img:hover {
+  opacity: 1;
 }
