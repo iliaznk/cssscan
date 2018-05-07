@@ -201,8 +201,19 @@ ol.with-margin-between-lis > li {
 .big-media {
   margin: 3.3em 0 4.3em;
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   @media only screen and (min-width : 768px) {
     margin: 4em 0 5em;
+  }
+
+  @media only screen and (min-width : 1024px) {
+    img {
+      width: initial;
+    }
   }
 }
 
