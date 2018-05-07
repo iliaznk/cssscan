@@ -147,6 +147,10 @@ ol.with-margin-between-lis > li {
   margin: 0;
 }
 
+.big-media {
+  margin-bottom: 5em;
+}
+
 .big-media iframe {
   width: 90vh !important;
   height: 500px;
@@ -195,21 +199,20 @@ iframe {
   border-radius: 3px !important;
 }
 
-section.free-time-explained {
+section.first-section {
   margin: 9em 0;
 }
 
 section.track-your-progress > *:not(figure),
-section.mrs-productives,
-section.call-to-action {
+section.other-sections,
+section.first-section {
   max-width: 36%;
   margin-left: auto;
   margin-right: auto;
 }
 
 section.track-your-progress,
-section.mrs-productives,
-section.call-to-action {
+section.other-sections {
   margin: 17em auto 9em;
 }
 
@@ -294,7 +297,7 @@ a.button:hover {
 
 .benefit {
   flex: 1;
-  margin: 0 .5em;
+  margin: 0 1.2em;
   text-align: left;
 }
 
