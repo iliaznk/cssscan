@@ -33,9 +33,6 @@ ol.with-margin-between-lis > li {
     ol.with-margin-between-lis > li {
       margin-top: 3em; } }
 
-.bold {
-  font-weight: bold; }
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -313,6 +310,9 @@ a.button {
   margin-top: 2em;
   display: inline-block;
   transition: 150ms; }
+  a.button:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 8px 31.15px 3.85px rgba(0, 0, 0, 0.1); }
   a.button span.only-phone.jump::before {
     content: '\A';
     white-space: pre; }
@@ -324,9 +324,6 @@ a.button {
     @media only screen and (min-width: 768px) {
       a.button span.only-tablet {
         display: inline; } }
-
-a.button:hover {
-  transform: scale(1.07); }
 
 .points {
   display: flex;
