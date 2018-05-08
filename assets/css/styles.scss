@@ -342,6 +342,27 @@ a.button {
   margin-top: 2em;
   display: inline-block;
   transition: 150ms;
+
+  span.only-phone.jump {
+    &::before {
+      content: '\A';
+      white-space: pre;
+    }
+  }
+
+  span.only-phone {
+    @media only screen and (min-width : 768px) {
+      display: none;
+    }
+  }
+
+  span.only-tablet {
+    display: none;
+
+    @media only screen and (min-width : 768px) {
+      display: inline;
+    }
+  }
 }
 
 a.button:hover {

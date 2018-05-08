@@ -313,6 +313,17 @@ a.button {
   margin-top: 2em;
   display: inline-block;
   transition: 150ms; }
+  a.button span.only-phone.jump::before {
+    content: '\A';
+    white-space: pre; }
+  @media only screen and (min-width: 768px) {
+    a.button span.only-phone {
+      display: none; } }
+  a.button span.only-tablet {
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      a.button span.only-tablet {
+        display: inline; } }
 
 a.button:hover {
   transform: scale(1.07); }
