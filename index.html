@@ -1,158 +1,68 @@
-<!doctype html>
-
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-
-  <title>mprove - Productivity progress for mac menu bar</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title>CSS Scan - Instantly check or copy computed CSS from any element on the internet</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/lity.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#fffff">
 
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta property="og:image" content="https://guivr.github.io/cssscan/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:title" content="CSS Scan - Instantly check or copy computed CSS from any element on the internet">
+  <meta property="og:description" content="A browser extension that allows you to check or copy computed CSS from any element on the internet.">
+  <meta property="og:url" content="https://guivr.github.io/cssscan/?ref=fb">
 
-  <meta name="description" content="A Mac Menu Bar App that shows in real-time your daily productivity and procrastination progress based on the free time you have every day.">
-  <meta name="author" content="Guilherme Rizzo">
-  <meta name="image" content="assets/img/og-image.jpg">
-  <meta http-equiv="content-language" content="en-us">
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-
-  <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://guivr.github.io/mprove/">
-  <meta property="og:title" content="mprove - Productivity progress for mac menu bar">
-  <meta property="og:site_name" content="mprove">
-  <meta property="og:description" content="A Mac Menu Bar App that shows in real-time your daily productivity and procrastination progress based on the free time you have every day.">
-  <meta property="og:image" content="assets/img/og-image.jpg">
-  <meta property="og:type" content="website">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="shortcut icon" type='image/x-icon' href='assets/favicon/favicon.ico' />
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#ffc40d">
-  <meta name="theme-color" content="#ffc40d">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@gvrizzo">
+  <meta name="twitter:title" content="CSS Scan - Instantly check or copy computed CSS from any element on the internet">
+  <meta name="twitter:description" content="A browser extension that allows you to check or copy computed CSS from any element on the internet.">
+  <meta name="twitter:image" content="https://guivr.github.io/cssscan/og-image-min.jpg">
 </head>
 
 <body>
-  <section class="main-banner">
-    <img src="assets/img/logo.png">
-    <div class="hero-text">
-      <h1>Beast mode ON</h1>
-      <!--<p>That moment you feel you did a lot of things at the end of the day? <span class="br"></span>Get this anytime at your menu bar.</p>!-->
-      <p>Know that moment when you feel like you've done a lot of things at the end of the day? <span class="br"></span>Feel like it anytime at your menu bar.</p>
+  <header class="nav">
+    <h3 class="logo"><img src="img/logo.png" class="logo-img">CSS Scan</h3>
+  </header>
+  <div class="hero-wrapper">
+    <div class="text">
+      <h1 class="hero">💫 &nbsp;Instantly check or copy computed CSS</h1>
+      <h2 class="desc">Inspect Element on steroids: study how things are made on the web in real-time and copy computed styles with no hassle (neither longhand styles)</h2>
+      <a href="https://chrome.google.com/webstore/detail/moniesto/gcnlcnefehelccgledbmkkaklanhhnig?gl=US" target="_blank" class="button button-principal">
+        <i class="fas fa-download"></i>Buy for the price you want
+      </a>
+      <a href="#" class="button demo-btn" id="demo-btn">
+        <i class="fas fa-play"></i>Demo
+      </a>
+      <a href="https://www.youtube.com/watch?v=0Yxm2IOX7q4" class="button video-btn" data-lity>
+        <i class="fas fa-play"></i>Video
+      </a>
+      <a href="https://www.youtube.com/watch?v=OtsNNXpXcYs" class="why" data-lity>Watch me building CSS Scan from first line of code</a>
     </div>
-    <div class="slidingVertical big-emoji">
-      <span>🕺</span>
-      <span>🤑</span>
-      <span>🏄‍</span>
-      <span>🤓</span>
-      <span>🏃‍</span>
-    </div>
-  </section>
-  <section class="first-section reveal">
-    <h2>You do procrastinate.</h2>
-    <ul class="points">
-      <li class="point">
-        <p class="point-emojis">⏳ 💸</p>
-        <p class="point-title">You're losing time</p>
-        <p class="point-desc">Most people are, and if you have no control over your time, you have no idea how much valuable it is!</p>
-      </li>
-      <li class="point">
-        <p class="point-emojis">🔍😴</p>
-        <p class="point-title">Lack of focus</p>
-        <p class="point-desc">What about that project you never launched? That book you never read?</p>
-      </li>
-      <li class="point">
-        <p class="point-emojis">🐒🙊</p>
-        <p class="point-title">You procrastinate more than you think</p>
-        <p class="point-desc">Odds are: you fucking procrastinate a lot. Stop it, god dammit.</p>
-      </li>
-    </ul>
-  </section>
-  <!--<section class="other-sections reveal">
-    <h2>You do have free time.</h2>
-    <ol class="with-margin-between-lis">
-      <li>
-        Calculate how much free time you have, everyday. E.g.:
-        <div class="post-it reveal">
-          <ul>
-            <li>24 hours</li>
-            <li>- 8 hours sleep 😴</li>
-            <li>- 8 hours 9-5 job 👔</li>
-            <li>- 1 hour for travel 🚕🚶</li>
-            <li>- 2 hours with family 👪</li>
-            <li class="result">= 5 free hours</li>
-          </ul>
-        </div>
-      </li>
-      <li>Now ask yourself: what the fuck am I doing with this time?</li>
-      <li>Gary Vee is a real one. Watch his short video below.</li>
-    </ol>
-    <figure class="center small-media reveal">
-      <span class="shadow"><iframe src="https://www.youtube.com/embed/edMfu5IILSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></span>
-    </figure>
-  </section>!-->
-  <section class="track-your-progress reveal">
-    <h2>Daily progress in real-time</h2>
-    <ul class="points">
-      <li class="point">
-        <p class="point-emojis">▶️ ⏸️</p>
-        <p class="point-title">Play and pause</p>
-        <p class="point-desc">Simple tracking. No bullshit.</p>
-      </li>
-      <li class="point">
-        <p class="point-emojis">📚🏃🏋️</p>
-        <p class="point-title">More than just online</p>
-        <p class="point-desc">Track even your offline activies, like gym, books, writing, etc. Just leave the timer on.</p>
-      </li>
-      <li class="point">
-        <p class="point-emojis">🔥🔥🔥</p>
-        <p class="point-title">Keep momentum</p>
-        <p class="point-desc">Real-time progress in percentage. See how productive and awesome you are anytime.</p>
-      </li>
-    </ul>
-    <figure class="center big-media reveal">
-      <span class="shadow"><img src="assets/img/Monkey.gif"></span>
-    </figure>
-    <p class="different">Differently from automatic time-tracking softwares, mprove gives you full control, so you become more mindful and accountable of what you're doing (clicking ▶️ ⏸️), and you'll see how you're using your precious free time in real-time percentage, not number of hours at the end of the day.</p>
-  </section>
-  <section class="other-sections reveal">
-    <h2>Get shit done.</h2>
-    <p>Your time is always running out. ⏳ Don't waste it. 💸</p>
-    <a href="https://gumroad.com/l/mprove" class="button" target="_blank"><span class="only-tablet">🔥🔥🔥 &nbsp;&nbsp;</span> Buy now for <span class="only-phone jump">🔥 </span>$4.97 <span class="only-phone"> 🔥</span><span class="only-tablet">&nbsp;&nbsp; 🔥🔥🔥</span></a>
-  </section>
-  <footer class="footer reveal">
-    <p>
-      Created with ❤️ and 😅 by
-      <img src="https://pbs.twimg.com/profile_images/992204495055671297/c-HeeDVn_400x400.jpg" height="20" class="profile-img">
-      <a href="https://twitter.com/gvrizzo" target="_blank">@gvrizzo</a>
-    </p>
-    <p>By buying this you earn superpowers and also help me survive as an indie developer 😊</p>
-    <p>I'm from Brazil and interested in meeting people from all over the world, let's talk!</p>
-  </section>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script>
-    window.sr = ScrollReveal();
-    sr.reveal('.reveal');
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118827214-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-118827214-1');
-  </script>
-  <script>
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:872797,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
+  </div>
+  <video class="demo-img" id="screen" autoplay="" loop="" muted="true" playsinline="">
+    <source src="img/demo.mp4" type="video/mp4">
+  </video>
+  <footer>
+    <p>Made with ❤️ and 😅 by 
+      <img src="https://avatars.io/twitter/gvrizzo" height="20" class="profile-img">
+      <a href="https://twitter.com/gvrizzo" target="_blank">@gvrizzo</a> | <a href="https://www.producthunt.com/posts/moniesto" target="_blank">We’re live on Product Hunt!</a> 😻</p>
+      <p>By buying this you'll save a lot of time and also help me survive as an indie developer 😊</p>
+  </footer>
+  <a href="https://wip.chat/@gvrizzo" data-wip>Made by Guilherme Rizzo</a>
+  <script src="https://platform.wip.chat/widgets.js" type="text/javascript"></script>
+  <script src="js/fontawesome-all.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/tilt.jquery.min.js"></script>
+  <script src="js/lity.min.js"></script>
+  <script src="demo-build/main.js"></script>
 </body>
 </html>
