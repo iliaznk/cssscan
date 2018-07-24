@@ -328,10 +328,15 @@ let matches = function(el, selector) {
   return (el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector).call(el, selector);
 };
 
+let isOnIframe = false
+
 const handle_mouseout_body = function(e) {
   if (e.relatedTarget != null && e.relatedTarget.localName === 'iframe') {
     lastE.classList.remove('cssscan-current');
     css_div.style.display = 'none'
+    isOnIframe = true
+  } else {
+    isOnIframe = false
   }
 }
 
@@ -350,7 +355,7 @@ const handle_mousemove_html = function(e){
     }
     css_div.style.display = 'none'
   } else {
-    if (css_div.style.display !== 'inline-block')
+    if (css_div.style.display !== 'inline-block' && !isOnIframe)
       css_div.style.display = 'inline-block'
   }
 

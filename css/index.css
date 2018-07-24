@@ -9,8 +9,7 @@ body {
   color: #333;
   font-size: 100%;
   margin: 0 auto;
-  padding: 0 8%;
-  text-align: center;
+  padding: 0 10%;
 }
 
 .logo {
@@ -63,11 +62,10 @@ body {
   will-change: transform;
   box-shadow: 0 7px 29px 0 rgba(100,100,111,.2);
   border: 1px solid #eee;
-  margin-left: 1em;
   display: inline-block;
 }
 
-.button:last-child {
+.video-btn {
   margin-top: 1em;
 }
 
@@ -130,12 +128,14 @@ footer {
   max-width: 95%;
 }
 
+p:last-child {
+  display: none;
+}
 
 @media screen and (min-width: 450px) {
   footer {
     bottom: 0;
     position: fixed;
-    margin-top: 0;
   }
 }
 
@@ -150,6 +150,10 @@ footer {
     //margin-top: 0;
     display: flex;
     align-items: center;
+  }
+
+  .button {
+    margin-left: 1em;
   }
 
   .video {
@@ -176,15 +180,20 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
   }
 
   footer {
     position: initial;
     bottom: initial;
   }
+
+  p:last-child {
+    display: block
+  }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1024px) {
   .demo-btn {
     display: inline-block;
   }
@@ -195,6 +204,10 @@ footer {
 
   .video-btn {
     display: none;
+  }
+
+  footer {
+    margin-top: 0;
   }
 }
 
