@@ -289,7 +289,11 @@ function handler(ev, ev_target_from_function) {
     target = ev_target_from_function
   }
 
-  dimensions_div.textContent = `${target.offsetWidth}x${target.offsetHeight}`
+  if (target.offsetWidth && target.offsetHeight) {
+    dimensions_div.textContent = `${target.offsetWidth}x${target.offsetHeight}`
+  } else {
+    dimensions_div.textContent = ''
+  }
 
   var classOrIdLabel = '';
   code_div.innerHTML = '';
