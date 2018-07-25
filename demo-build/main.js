@@ -294,7 +294,9 @@ function handler(ev, ev_target_from_function) {
   var classOrIdLabel = '';
   code_div.innerHTML = '';
 
-  if (target.id) {
+  if (target.id && target.className && target.classList.value !== '') {
+    classOrIdLabel = `#${target.id}.${target.classList.value.replace(/ /g, '.').replace(/.cssscan-grid-show/g, '')}`
+  } else if (target.id) {
     classOrIdLabel = `#${target.id}`
   } else if (target.className && target.classList.value !== '') {
     classOrIdLabel = `.${target.classList.value.replace(/ /g, '.').replace(/.cssscan-grid-show/g, '')}`
@@ -366,6 +368,14 @@ const handle_mousemove_html = function(e){
     }
     target.classList.add('cssscan-current');
     lastE = target;
+  }
+
+  let outlined_elements = document.getElementsByClassName('cssscan-current')
+
+  if (outlined_elements.length > 1) {
+    for (var i = 1; i < outlined_elements.length; i++) {
+      outlined_elements[i].classList.remove('cssscan-current');
+    }
   }
 
   let translateX = 0, translateY = 0

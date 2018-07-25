@@ -132,6 +132,19 @@ p:last-child {
   display: none;
 }
 
+iframe[src*="wip.chat"] {
+  display: none;
+}
+
+.supported-browsers {
+  color: #b6b6b6;
+  margin-top: 2em;
+}
+
+.supported-browsers svg:last-child {
+  margin-left: .5em;
+}
+
 @media screen and (min-width: 450px) {
   footer {
     bottom: 0;
@@ -198,7 +211,8 @@ p:last-child {
     display: inline-block;
   }
 
-  .demo-img {
+  .demo-img,
+  iframe[src*="wip.chat"] {
     display: block;
   }
 
@@ -233,7 +247,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.why {
+.speed-video-a {
   margin-top: 2em;
   display: block;
   color: #999;
